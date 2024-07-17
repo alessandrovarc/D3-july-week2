@@ -1,12 +1,11 @@
 body {
-    padding: 0;
     margin: 0;
     display: block;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 
 }
-
+$body-padding-inline: 60px;
 $violet-color: rgb(143, 29, 250);
 
 @mixin mobile-vertical-list {
@@ -21,10 +20,25 @@ nav {
     padding: 0 10px 0 10px;
     display: flex;
     justify-content: space-between;
+    padding: $body-padding-inline;
 
     .list {
         display: flex;
         gap: 30px;
     }
     @include mobile-vertical-list;
+}
+
+.hero {
+    background-color: $violet-color;
+    padding: $body-padding-inline;
+    .text-content {
+        width: 50%;
+    }
+    .title {
+        font-weight: bolder;
+        font-size: 3em;
+        font-family: "Archivo Black", sans-serif;
+        line-height: 43px;
+    }
 }

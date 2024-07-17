@@ -1,5 +1,4 @@
 body {
-  padding: 0;
   margin: 0;
   display: block;
   box-sizing: border-box;
@@ -11,6 +10,7 @@ nav {
   padding: 0 10px 0 10px;
   display: flex;
   justify-content: space-between;
+  padding: 60px;
 }
 nav .list {
   display: flex;
@@ -20,4 +20,18 @@ nav .list {
   nav {
     flex-direction: column;
   }
+}
+
+.hero {
+  background-color: rgb(143, 29, 250);
+  padding: 60px;
+}
+.hero .text-content {
+  width: 50%;
+}
+.hero .title {
+  font-weight: bolder;
+  font-size: 3em;
+  font-family: "Archivo Black", sans-serif;
+  line-height: 43px;
 }/*# sourceMappingURL=index.css.map */
